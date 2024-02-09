@@ -98,7 +98,7 @@ function scorerPrompt(array, word) {
    console.log("0 - Simple: One point per character\n1 - Vowel Bonus: Vowels are worth 3 points\n2 - Scrabble: Uses scrabble point system");
    let algorithmChosen= input.question("Enter 0, 1, or 2: ");
    algorithmChosen = Number(algorithmChosen);
-   let points = array[algorithmChosen].scoringFunction(word);
+   let points = array[algorithmChosen].scorerFunction(word);
    return `Score for '${word}': ${points}`
 }
 
